@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 32px; 
+  line-height: 1.6;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.profile_image {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 5px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.profile .profile_image:hover {
+  transform: scale(1.1);
+}
+
+.name, .sub-name {
+  font-family: 'fontBWD', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.name {
+  font-size: 32px;
+  padding-top: 16px;
+}
+
+.sub-name {
+  font-size: 20px;
+  padding-top: 16px;
+}
+
+.rating-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+  padding: 30px 40px;
+  border-radius: 30px;
+}
+
+.rating input {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.rating input::before {
+  content: "\f005"; 
+  position: absolute;
+  font-family: 'fontAwesome'; 
+  font-size: 34px;
+  color: #97bade;
+  transition: 0.5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:checked ~ input::before {
+  color: var(--c); 
+}
+
+#lydo {
+  height: 128px;
+  width: 30%;
+  padding: 8px 16px;
+  resize: none;
+  font-family: 'fontBWD', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+input[type="file"] {
+  margin-top: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #97bade;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content__container--header--button {
+  background-color: #97bade;
+  color: whitesmoke;
+  text-align: center;
+  padding: 8px 64px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.content__container--header--button:hover {
+  opacity: 0.8;
+}
