@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       {/* Header */}
       <Header />
-     
+      <p>xin chao</p>
+      <Footer/>
     </div>
   );
 }

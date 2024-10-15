@@ -1,0 +1,72 @@
+.footer {
+    background-color: #97bade; /* Light blue background */
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Default column layout */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.quick-links, .contact-info {
+    margin: 15px 0; /* Spacing between sections */
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 5px 0;
+}
+
+.quick-links a {
+    color: #FFFFFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.quick-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #FFFFFF; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Switch to row layout on larger screens */
+        justify-content: space-between; /* Space between items */
+    }
+
+    .quick-links, .contact-info {
+        flex: 1; /* Allow sections to take equal space */
+        margin: 0 15px; /* Horizontal spacing */
+    }
+}
