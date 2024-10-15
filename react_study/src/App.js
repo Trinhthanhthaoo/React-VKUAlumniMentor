@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       {/* Header */}
       <Header />
-      <p>xin chao</p>
+      <Content/>
       <Footer/>
     </div>
   );
