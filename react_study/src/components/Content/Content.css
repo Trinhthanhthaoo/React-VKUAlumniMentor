@@ -240,24 +240,24 @@ body{
 }
 
 .article:nth-child(5n+1){
-   background-image:url("#");
+   background-image:url("./img1.jpg");
 }
 
 .article:nth-child(5n+2){
-   background-image:url("#");
+   background-image:url("./VKU1.jpg");
 }
 .article:nth-child(5n+3){
- background-image:url("#");
+ background-image:url("./img2.jpg");
 }
 
 .article:nth-child(5n+4){
- background-image:url("#");
+ background-image:url("./img4.jpg");
 }
 .article:nth-child(5n+5){
- background-image:url("#");
+ background-image:url("./img5.jpg");
 }
 .article:nth-child(5n+6){
-  background-image:url("#");
+  background-image:url("./team.jpg");
  }
 
 .overlay {

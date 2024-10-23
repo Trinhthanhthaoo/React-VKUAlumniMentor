@@ -3,6 +3,8 @@ import './Content.css';
 import TP1 from '../../img/TP1.jpg';
 import VKU1 from '../../img/VKU1.jpg';
 import VKU from '../../img/VKU.jpg';
+import Mentor from '../../img/mentor.jpg';
+
 
 const Content = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -78,17 +80,15 @@ const Content = () => {
             <div className="content"> 
                 <div className="sub-content">
                     <div className="content-blog">
-                        <h3 className="highlight-title"><b>Vài nét chính Nhật ký thanh niên</b></h3>
+                        <h3 className="highlight-title"><b>Vài nét về website VKUAlumniMentor </b></h3>
                         <p>
-                            Nhật ký thanh niên là nơi lưu giữ những khoảnh khắc đáng nhớ, những cảm xúc chân thật và những trải nghiệm tuyệt vời tại trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU). 
-                            Từ những ngày đầu bước chân vào cánh cổng đại học, chúng tôi đã trải qua bao thăng trầm, từ những hoạt động đoàn hội sôi nổi, những buổi sinh hoạt đầy ý nghĩa, cho đến những giờ học căng thẳng nhưng không kém phần thú vị. 
+                        VKU Alumni Mentor là một nền tảng chuyên biệt nhằm kết nối sinh viên với các cựu sinh viên của Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU). Đây là nơi các cựu sinh viên cung cấp sự hướng dẫn và cố vấn cho sinh viên, giúp họ định hướng trong hành trình học tập và phát triển sự nghiệp. Thông qua chương trình cố vấn một kèm một, các cựu sinh viên cung cấp lời khuyên cá nhân hóa về con đường sự nghiệp, thực tập, và kỹ năng chuyên môn. Nền tảng này cũng cung cấp các tài nguyên nghề nghiệp như bảng thông tin việc làm và thực tập, hướng dẫn xây dựng CV, và luyện tập phỏng vấn, giúp sinh viên nâng cao khả năng cạnh tranh và chuẩn bị tốt hơn cho sự nghiệp tương lai.
                             <br /><br />
-                            Đặc biệt, trong môi trường này, không chỉ kiến thức mà còn là những bài học về tinh thần đoàn kết, lòng nhân ái, và trách nhiệm đối với cộng đồng đã thấm sâu vào mỗi sinh viên. Cuốn nhật ký này không chỉ đơn giản là ghi lại hành trình trưởng thành, mà còn là một cách để nhắc nhở chúng ta về ý nghĩa của tuổi trẻ - khoảng thời gian tươi đẹp nhưng ngắn ngủi, nơi mà chúng ta đã từng cống hiến và sống hết mình. Hành trình này còn gắn liền với ký ức tuổi trẻ tại quê nhà xã Bình Lâm, một nơi bình dị mà tôi luôn tự hào.
-                        </p>
+                            Ngoài việc cố vấn, VKU Alumni Mentor còn xây dựng một mạng lưới vững mạnh bằng cách tổ chức các sự kiện, hội thảo, và hội thảo trực tuyến do các cựu sinh viên có kinh nghiệm dẫn dắt. Những buổi này bao gồm nhiều chủ đề khác nhau như xu hướng ngành nghề, phát triển kỹ năng, và những hiểu biết thực tiễn về công việc. Nền tảng này cũng giới thiệu những câu chuyện thành công đầy cảm hứng từ các cựu sinh viên, khích lệ sinh viên hiện tại và minh họa các cơ hội đa dạng mà sinh viên tốt nghiệp VKU có thể đạt được. Thông qua những sáng kiến này, VKU Alumni Mentor củng cố cộng đồng VKU, tạo ra một môi trường hợp tác nơi sinh viên và cựu sinh viên có thể cùng nhau phát triển.</p>
                         <a href="#activity" className="btn-read-more">Các trải nghiệm của tôi <big><b>↓</b></big></a>
                     </div>
                     <div className="content-img">
-                        <img src={VKU} alt="Hình ảnh về VKU" />
+                        <img src={Mentor} alt="Hình ảnh về VKU" />
                     </div>
                 </div>
             </div>

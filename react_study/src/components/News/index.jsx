@@ -1,6 +1,5 @@
 import React from 'react';
-import './news.css'; // Import your CSS
-
+import './news.css'; 
 
 const BlogCard = ({ title, date, link, image }) => {
   return (
@@ -125,3 +124,13 @@ const BlogSection = () => {
   );
 };
 
+// Rename 'Index' to 'News' or export 'Index' based on your requirement
+const News = () => {
+  return (
+    <div>
+      <BlogSection />
+    </div>
+  );
+};
+
+export default News;
