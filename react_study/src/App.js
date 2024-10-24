@@ -16,6 +16,7 @@ function App() {
       {/* <News/> */}
       <Mentor/>
       <Course/>
+      
       <Footer/>
  
     </div>
