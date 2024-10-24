@@ -5,6 +5,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import News from "./components/News";
 import Mentor from "./components/Mentor";
+import Course from "./components/course";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Content/>
       {/* <News/> */}
       <Mentor/>
+      <Course/>
       <Footer/>
  
     </div>

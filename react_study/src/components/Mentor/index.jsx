@@ -21,7 +21,7 @@ const Mentor = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    arrows: true, // Bật nút điều hướng
+    arrows: true, 
     prevArrow: <button className="slick-prev"><FaChevronLeft /></button>, // Nút điều hướng trước
     nextArrow: <button className="slick-next"><FaChevronRight /></button>, // Nút điều hướng sau
   };
