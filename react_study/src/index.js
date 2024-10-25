@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import Document from './Document';
+// import Document from './Document';
+import Competition from './Competition';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Document/>
+    {/* <Document/> */}
+    <Competition/>
   </React.StrictMode>
 );
 
