@@ -1,25 +1,18 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
-import News from "./components/News";
-import Mentor from "./components/Mentor";
-import Course from "./components/course";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Login_Register from './components/Login_Register';
+import Competition from './components/Competition';
+import Document from './components/Document';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      {/* Header */}
-      <Header /> 
-      <Content/>
-      {/* <News/> */}
-      <Mentor/>
-      <Course/>
-      
-      <Footer/>
- 
-    </div>
+    <Routes>
+      <Route path="/Login_Register" element={<Login_Register />} />
+      <Route path="/Competition" element={<Competition />} />
+      <Route path="/Document" element={<Document />} />
+      <Route path="/Homepage" element={<Homepage />} />
+    </Routes>
   );
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 import "./Competition.css"; // Note: The extension is usually .css for CSS files.
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from './Header';
+import Footer from './Footer';
+
 import { Helmet } from "react-helmet";
 
 // DocumentCard Component

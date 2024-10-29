@@ -1,7 +1,7 @@
 import React from "react";
 import "./Document.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from './Header';
+import Footer from './Footer';
 
 // DocumentCard Component
 const DocumentCard = () => {
@@ -25,11 +25,22 @@ const DocumentCard = () => {
             alt="Delicious Food"
           />
           <div className="card-content">
-            <h2>Gourmet Burger</h2>
+            <h2>Lập trình với Python</h2>
             <p>
-              Experience the taste of gourmet burgers with this simple yet
-              delicious recipe.
+              Cung cấp kiến thức cơ bản và ứng dụng đa dạng của ngôn ngữ lập trình này.
             </p>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row-reverse",
+                justifyContent: "space-between",
+                marginTop: "5px",
+              }}
+            >
+              <a href="#">KinhNguyen <i className="fa-solid fa-user"></i></a>
+              <span>05-10-2024</span>
+            </div>
           </div>
         </div>
 
@@ -39,9 +50,9 @@ const DocumentCard = () => {
             alt="Tasty Pasta"
           />
           <div className="card-content">
-            <h2>Italian Pasta</h2>
+            <h2>C++ cơ bản</h2>
             <p>
-              Indulge in a classic Italian pasta dish, perfect for any occasion.
+              Cung cấp hướng dẫn chi tiết về ngôn ngữ lập trình này và các nguyên tắc thiết kế phần mềm.
             </p>
           </div>
         </div>
@@ -52,9 +63,9 @@ const DocumentCard = () => {
             alt="Healthy Salad"
           />
           <div className="card-content">
-            <h2>Healthy Salad</h2>
+            <h2>Cơ sở dữ liệu</h2>
             <p>
-              Stay healthy and fit with this fresh and nutritious salad recipe.
+              Hiểu và áp dụng ngôn ngữ truy vấn cơ sở dữ liệu để tương tác, truy xuất và quản lý dữ liệu hiệu quả.
             </p>
           </div>
         </div>

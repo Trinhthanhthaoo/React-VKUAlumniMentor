@@ -1,19 +1,23 @@
+// src/components/Login/index.jsx
 import React, { useState } from 'react';
 import './Login.css';
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
-const Index = () => {  // Đổi 'index' thành 'Index'
+const Login = () => {
+  const [action, setAction] = useState('');
+  
+  const registerLink = () => {
+    setAction('active');
+  };
 
- const [action, setAction] = useState('');
- const registerLink = () => {
-    setAction('active')
- } 
- const loginLink = () => {
-    setAction('')
- } 
+  const loginLink = () => {
+    setAction('');
+  };
+
   return (
+    <div className='about'>
     <div className={`wrapper ${action}`}>
         <div className='form-box login'>
             <form action="">
@@ -30,9 +34,7 @@ const Index = () => {  // Đổi 'index' thành 'Index'
                     <label><input type="checkbox" />Lưu mật khẩu</label>
                     <a href="#">Quên mật khẩu</a>
                 </div>
-                <button type='submit'>
-                        Đăng nhập
-                </button>
+                <button type='submit'>Đăng nhập</button>
                 <div className='register-link'>
                     <p>Bạn chưa có tài khoản? <a href="#" onClick={registerLink}>Đăng ký</a></p>
                 </div>
@@ -56,16 +58,15 @@ const Index = () => {  // Đổi 'index' thành 'Index'
                 <div className='remember-forgot'>
                     <label><input type="checkbox" />I agree to the terms & conditions </label>
                 </div>
-                <button type='submit'>
-                        Đăng ký
-                </button>
+                <button type='submit'>Đăng ký</button>
                 <div className='register-link'>
-                    <p>Already have an account?<a href="#" onClick={loginLink}>Đăng nhập</a></p>
+                    <p>Already have an account? <a href="#" onClick={loginLink}>Đăng nhập</a></p>
                 </div>
             </form>
         </div>
     </div>
+    </div>
   );
 };
 
-export default Index;
+export default Login;
