@@ -6,6 +6,7 @@ import Footer from './Footer';
 // DocumentCard Component
 const DocumentCard = () => {
   return (
+    <div>
     <main>
       {/* Search bar container */}
       <div className="search-container">
@@ -71,6 +72,7 @@ const DocumentCard = () => {
         </div>
       </div>
     </main>
+    </div>
   );
 };
 

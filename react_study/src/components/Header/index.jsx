@@ -1,44 +1,50 @@
 import React from 'react';
-// import Content from "../Content";
 import "./Header.css";
 import logo from '../../img/logo.png';
 
 const Header = () => {
   return (
-    <header> 
-    <div class="container">
-        <div class="logo">
-            <img src={logo}  alt="logo" />
-        </div>
-        <nav class="nav-menu">
-            <ul class="menu-list">
-                <li><a href="/index.html">Trang chủ</a></li>
-                <li class="dropdown">
-                    <a href="/Blog.html">Đăng ký mentor</a>
-                    {/* <!-- <ul class="dropdown-content">
-                        <li><a href="#nhatky">Nhật ký cá nhân</a></li>
-                        <li><a href="#cauchuyen">Câu chuyện thanh niên Việt Nam</a></li>
-                     
-                    </ul> --> */}
-                </li>
-                <li class="dropdown">
-                    <a href="#project1">Tài liệu</a>
-                   
-                </li>
-                <li class="dropdown">
-                  <a href="#diary">Cuộc thi</a>
-                 
-              </li>
-                <li><a href="/About.html">Về tôi</a></li>
+    <>
+      {/* header  */}
+      <div id="header" data-header>
+        <div className="navbar">
+          <div className="logo">
+            <a href="/">
+              <img src={logo} alt="Logo" />
+            </a>
+          </div>
+
+          <ul className="links">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="#">Đăng ký Mentor</a></li>
+            <li><a href="/">Tìm kiếm Mentor</a></li>
+            <li><a href="/PublicVKU.html">Cộng đồng</a></li>
+            <li><a href="/HopTac.html">Hợp tác</a></li>
+            <li><a href="/DanhGia.html">Đánh giá</a></li>
+            <li><a href="/LienHe.html">Về chúng tớ</a></li>
+          </ul>
+          <a className="action_btn" href="/Login.html">BẮT ĐẦU</a>
+          <div className="toggle_btn">
+            <i className="fa-solid fa-bars"></i>
+          </div>
+
+          {/* Dropnav */}
+          <div className="dropdown_menu">
+            <ul>
+              <li><a href="/">Trang chủ</a></li>
+              <li><a href="#">Đăng ký Mentor</a></li>
+              <li><a href="/">Tìm kiếm Mentor</a></li>
+              <li><a href="/PublicVKU.html">Cộng đồng</a></li>
+              <li><a href="/HopTac.html">Hợp tác</a></li>
+              <li><a href="/DanhGia.html">Đánh giá</a></li>
+              <li><a href="/LienHe.html">Về chúng tớ</a></li>
+              <li><a className="action_btn2" href="/Login.html">BẮT ĐẦU</a></li>
             </ul>
-        </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+      {/* end header  */}
+    </>
   );
 };
 

@@ -1,78 +1,82 @@
 import React from "react";
-import "./Competition.css"; // Note: The extension is usually .css for CSS files.
+import "./Competition.css"; // Note: Ensure the CSS file is correctly linked.
 import Header from './Header';
 import Footer from './Footer';
+import TP1 from '../img/TP1.jpg';
+import VKU1 from '../img/VKU1.jpg';
+import VKU from '../img/VKU.jpg';
+const competitionData = [
+  {
+    id: 1,
+    title: "Tiêu đề 1",
+    description: "Miêu tả 1",
+    author: "Tác giả 1",
+    startDate: "01/01/2024",
+    endDate: "01/31/2024",
+    image:TP1, // Replace with actual image URLs
+  },
+  {
+    id: 2,
+    title: "Tiêu đề 2",
+    description: "Miêu tả 2",
+    author: "Tác giả 2",
+    startDate: "02/01/2024",
+    endDate: "02/28/2024",
+    image: VKU1, // Replace with actual image URLs
+  },
+  {
+    id: 3,
+    title: "Tiêu đề 3",
+    description: "Miêu tả 3",
+    author: "Tác giả 3",
+    startDate: "03/01/2024",
+    endDate: "03/31/2024",
+    image: VKU, // Replace with actual image URLs
+  },
+  {
+    id: 4,
+    title: "Tiêu đề 3",
+    description: "Miêu tả 3",
+    author: "Tác giả 3",
+    startDate: "03/01/2024",
+    endDate: "03/31/2024",
+    image: VKU, // Replace with actual image URLs
+  },
+  {
+    id: 3,
+    title: "Tiêu đề 3",
+    description: "Miêu tả 3",
+    author: "Tác giả 3",
+    startDate: "03/01/2024",
+    endDate: "03/31/2024",
+    image: VKU, // Replace with actual image URLs
+  },
+];
 
-import { Helmet } from "react-helmet";
-
-// DocumentCard Component
-const CompetitionCard = () => {
+// CompetitionCard Component
+const CompetitionCard = ({ competition }) => {
   return (
-    
-    <section>
-    <div className="container">
-      {[ // Using an array to map through the card data
-        {
-          imgSrc: "https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          title: "trust & co.",
-          description: "Fill out the form and the algorithm will offer the right team of experts",
-          tags: ["branding", "packaging"],
-        },
-        {
-          imgSrc: "https://images.unsplash.com/photo-1613235788366-270e7ac489f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          title: "tonic",
-          description: "Fill out the form and the algorithm will offer the right team of experts",
-          tags: ["branding", "marketing"],
-        },
-        {
-          imgSrc: "https://images.unsplash.com/photo-1673847401561-fcd75a7888c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          title: "shower gel",
-          description: "Fill out the form and the algorithm will offer the right team of experts",
-          tags: ["branding", "packaging", "marketing"],
-        },
-      ].map((card, index) => (
-        <div className="card" key={index}>
-          <div className="card-inner" style={{ "--clr": "#fff" }}>
-            <div className="box">
-              <div className="imgBox">
-                <img src={card.imgSrc} alt={card.title} />
-              </div>
-              <div className="icon">
-                <a href="#" className="iconBox">
-                  <span className="material-symbols-outlined">arrow_outward</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="content">
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-            <ul>
-              {card.tags.map((tag, tagIndex) => (
-                <li key={tagIndex} style={{ "--clr-tag": tag === "branding" ? "#d3b19a" : tag === "packaging" ? "#70b3b1" : "#d05fa2" }} className={tag}>
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
+    <div className="Sub-Card" key={competition.id}>
+      <img src={competition.image} alt={competition.title} />
+      <h4>{competition.title}</h4>
+      <p>{competition.description}</p>
+      <h5>Tên tác giả: {competition.author}</h5>
+      <h5>Ngày bắt đầu: {competition.startDate}</h5>
+      <h5>Ngày kết thúc: {competition.endDate}</h5>
+      <button>Tham gia</button>
     </div>
-    </section>
   );
 };
 
 function Competition() {
   return (
     <div className="Competition">
-        <Helmet>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        />
-      </Helmet>
       <Header />
-      <CompetitionCard />
+      <div className="CardWrapper">
+        {competitionData.map((competition) => (
+          <CompetitionCard key={competition.id} competition={competition} />
+        ))}
+      </div>
       <Footer />
     </div>
   );

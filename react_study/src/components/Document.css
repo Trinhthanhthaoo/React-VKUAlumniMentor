@@ -1,7 +1,20 @@
 /* Main layout */
+.Document {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
 main {
-    flex: 1;
-    padding: 2rem;
+    flex: 1; 
+}
+
+.CarDoc {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 2rem; 
 }
 
 /* Search bar styling */
@@ -9,7 +22,7 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem; /* Space between the search bar and cards */
-    margin-top: 4rem; /* This will push the search bar further down */
+    margin-top: 5rem; /* Adjust as necessary */
 }
 
 .search-input {
@@ -74,4 +87,3 @@ main {
 .card-content p {
     color: #555;
 }
-
