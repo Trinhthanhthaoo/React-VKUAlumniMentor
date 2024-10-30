@@ -14,7 +14,7 @@ const Header = () => {
             <ul class="menu-list">
                 <li><a href="/index.html">Trang chủ</a></li>
                 <li class="dropdown">
-                    <a href="/Blog.html">Hoạt động</a>
+                    <a href="/Blog.html">Đăng ký mentor</a>
                     {/* <!-- <ul class="dropdown-content">
                         <li><a href="#nhatky">Nhật ký cá nhân</a></li>
                         <li><a href="#cauchuyen">Câu chuyện thanh niên Việt Nam</a></li>
@@ -22,11 +22,11 @@ const Header = () => {
                     </ul> --> */}
                 </li>
                 <li class="dropdown">
-                    <a href="#project1">Dự án</a>
+                    <a href="#project1">Tài liệu</a>
                    
                 </li>
                 <li class="dropdown">
-                  <a href="#diary">Nhật ký</a>
+                  <a href="#diary">Cuộc thi</a>
                  
               </li>
                 <li><a href="/About.html">Về tôi</a></li>
